@@ -3,12 +3,77 @@
     <head>
         <meta charset="utf-8" />
         <title>Nickolas Benakis – Frontend Engineer</title>
-        <meta name="description" content="Hi I am Nickolas Benakis. Software Engineer" />
-        <meta name="theme-color" content="#008bb3">
+        <meta
+            name="description"
+            content="Hi I am Nickolas Benakis. Software Engineer"
+        />
+        <meta name="theme-color" content="#008bb3" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="./assets/batman.png">
+        <link rel="shortcut icon" href="./assets/batman.png" />
         <link rel="manifest" href="./manifest.webmanifest" />
-        <link rel="stylesheet" href="./index.scss" />
+        <style>
+            html {
+                font-size: 62.5%;
+            }
+
+            body {
+                margin: 0;
+                color: #555;
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+                    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+            }
+
+            .container {
+                height: 100vh;
+                box-sizing: border-box;
+                padding: 0.5rem;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .headline {
+                font-size: 2rem;
+                color: #333;
+            }
+            .headline,
+            .tagline {
+                margin: 0;
+            }
+            main {
+                max-width: 50rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                line-height: 1.4;
+                margin-block-end: 0;
+            }
+
+            a {
+                color: #005b80;
+                text-decoration: none;
+                white-space: nowrap;
+            }
+            a:visited {
+                color: #9e00a0;
+            }
+
+            .fade-in.mounted {
+                opacity: 1;
+            }
+
+            .fade-in {
+                transition: opacity 1s ease-in;
+                opacity: 0.1;
+            }
+
+            .social {
+                display: inline-block;
+                margin-top: 1rem;
+                margin-right: 1rem;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -19,14 +84,14 @@
                 <p class="tagline">a Software Engineer</p>
                 <p>
                     I love to write JavaScript, especially when I can use it to
-                    create awesome web applications.
-                    Recently I fell in love with React ⚛️.
+                    create awesome web applications. Recently I fell in love
+                    with React ⚛️.
                 </p>
                 <p>
                     Currently, I'm a frontend engineer at
                     <a target="_blank" href="http://www.afse.eu/">
                         AdvantageFSE
-                    </a> 
+                    </a>
                     ,a Software House specialized in web-banking products.
                 </p>
                 <p>
@@ -47,7 +112,10 @@
                         style="width: 24px;height: 24px;"
                     />
                 </a>
-                <a href="https://www.linkedin.com/in/nickolas-benakis-a718baa8/" class="social">
+                <a
+                    href="https://www.linkedin.com/in/nickolas-benakis-a718baa8/"
+                    class="social"
+                >
                     <img
                         src="./assets/linkedin.svg"
                         alt="linkedin-logo"
@@ -60,7 +128,7 @@
                         alt="github-logo"
                         style="width: 24px;height: 24px;"
                     />
-                </a>                
+                </a>
             </main>
         </div>
         <script src="index.js"></script>
