@@ -30,6 +30,9 @@ body {
     transition: 0.5s all ease;
     outline-width: thin;
 
+    @media (max-width: 600px) {
+        outline: none;
+    }
 
     .toggle {
         width: 25px;
