@@ -1,23 +1,24 @@
 (() => {
     const cacheName = 'news-v1';
     const staticAssets = [
-        './',
+        './index.html',
         './index.js',
         './index.scss',
+        './toggle.scss',
         './fallback.json',
         './images/fallback_image.jpg',
     ];
 
-    globalThis.addEventListener('install', async function() {
+    self.addEventListener('install', async function() {
         const cache = await caches.open(cacheName);
         cache.addAll(staticAssets);
     });
 
-    globalThis.addEventListener('activate', event => {
-        event.waitUntil(globalThis.clients.claim());
+    self.addEventListener('activate', event => {
+        event.waitUntil(self.clients.claim());
     });
 
-    globalThis.addEventListener('fetch', event => {
+    self.addEventListener('fetch', event => {
         const request = event.request;
         const url = new URL(request.url);
         if (url.origin === location.origin) {
