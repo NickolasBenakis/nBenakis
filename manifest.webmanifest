@@ -6,6 +6,26 @@
             "src": "./assets/batman.svg",
             "type": "image/svg",
             "sizes": "64x64 128x128 192x192 256x256 512x512"
+        },
+        {
+            "src": "./assets/batmanPng/batman64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/batmanPng/batman128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/batmanPng/batman256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/batmanPng/batman512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ],
     "display": "fullscreen",
