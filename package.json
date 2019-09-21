@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf .cache \n rm -rf dist \n parcel index.html --no-hmr ",
+    "deploy" :"cd ./dist \n surge --domain https://nbenakis.surge.sh/ "
   },
   "author": "",
   "license": "ISC",
