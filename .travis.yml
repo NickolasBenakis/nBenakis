@@ -6,7 +6,7 @@ cache:
   directories:
     - node_modules
 node_js:
-  - "latest"
+  - "8"
 before_script:
   - sudo $(which npm) install
 script:
