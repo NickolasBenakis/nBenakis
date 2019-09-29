@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build2": "parcel index.html",
-        "build": "rm -rf .cache \n rm -rf dist \n parcel build index.html --no-hmr",
+        "buildProd": "rm -rf .cache \n rm -rf dist \n parcel build index.html",
+        "build": "rm -rf .cache \n rm -rf dist \n parcel index.html --no-hmr",
         "deploy": "cd ./dist \n surge --domain https://nbenakis.surge.sh/ ",
         "install": "sudo npm install"
     },
