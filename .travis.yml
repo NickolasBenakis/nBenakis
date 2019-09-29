@@ -2,8 +2,8 @@ notifications:
   email: false
 language: node_js
 node_js:
-  - "10.15.3"
-cache: npm
+  - "10"
+  - "8"
 before_script:
   - npm i -g npm@version-number
 script:
