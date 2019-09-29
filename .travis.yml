@@ -4,7 +4,8 @@ notifications:
 language: node_js
 node_js:
   - "10"
-before_script:
+before_install:
+  - npm install -g
   - npm ci
 script:
   - npm run build
