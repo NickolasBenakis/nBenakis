@@ -9,3 +9,10 @@ install:
   - npm install -g parcel
 script:
   - npm run build2
+deploy:
+  provider: surge
+  project: dist
+  domain: https://nbenakis.surge.sh/
+  skip-cleanup: true
+  on:
+    branch: master
