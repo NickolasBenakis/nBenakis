@@ -12,10 +12,3 @@ deploy:
   skip-cleanup: true
   on:
     branch: master
-after_success:
-  - "curl -Lo travis_after_all.py https://git.io/travis_after_all"
-  - python travis_after_all.py
-  - export $(cat .to_export_back) &> /dev/null
-branches:
-  only:
-    - master
