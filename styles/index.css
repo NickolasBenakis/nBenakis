@@ -1,5 +1,3 @@
-@import './toggle.scss';
-
 html {
     font-size: 62.5%;
 }
@@ -46,11 +44,11 @@ a {
     color: #005b80;
     text-decoration: none;
     white-space: nowrap;
+}
 
-    &:visited {
-        color: #9e00a0;
+a:visited {
+    color: #9e00a0;
 
-    }
 }
 
 .fade-in.mounted {
