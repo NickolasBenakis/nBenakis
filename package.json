@@ -1,30 +1,30 @@
 {
-	"name": "myblog",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build2": "parcel index.html",
-		"build": "rm -rf .cache \n rm -rf dist \n parcel index.html --no-hmr",
-		"deploy": "cd ./dist \n surge --domain https://nbenakis.surge.sh/ ",
-		"install": "sudo npm install"
-	},
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"@babel/core": "^7.6.0",
-		"@babel/plugin-transform-runtime": "^7.6.0",
-		"babel-core": "^6.26.3",
-		"babel-plugin-transform-runtime": "^6.23.0",
-		"babel-runtime": "^6.26.0",
-		"parcel": "^1.12.3",
-		"parcel-bundler": "^1.12.3",
-		"parcel-plugin-bundle-manifest": "^0.2.0",
-		"parcel-plugin-imagemin": "^3.0.0",
-		"prettier": "1.18.2"
-	},
-	"dependencies": {
-		"@babel/runtime-corejs2": "^7.6.0"
-	}
+    "name": "myblog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build2": "parcel index.html",
+        "build": "rm -rf .cache \n rm -rf dist \n parcel build index.html --no-hmr",
+        "deploy": "cd ./dist \n surge --domain https://nbenakis.surge.sh/ ",
+        "install": "sudo npm install"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.6.0",
+        "@babel/plugin-transform-runtime": "^7.6.0",
+        "babel-core": "^6.26.3",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-runtime": "^6.26.0",
+        "parcel": "^1.12.3",
+        "parcel-bundler": "^1.12.3",
+        "parcel-plugin-bundle-manifest": "^0.2.0",
+        "parcel-plugin-imagemin": "^3.0.0",
+        "prettier": "1.18.2"
+    },
+    "dependencies": {
+        "@babel/runtime-corejs2": "^7.6.0"
+    }
 }
