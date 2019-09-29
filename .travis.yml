@@ -8,4 +8,4 @@ install:
   - npm install -g npm@2
   - npm install -g parcel
 script:
-  - npm run build
+  - npm run build2
