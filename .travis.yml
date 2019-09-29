@@ -3,9 +3,6 @@ notifications:
 language: node_js
 node_js:
   - "10"
-  - "8"
-before_script:
-  - npm i -g npm@version-number
 script:
   - npm run build
 deploy:
